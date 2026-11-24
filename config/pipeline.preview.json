@@ -1,0 +1,212 @@
+{
+  "title": "HF-KG cardiovascular Graph",
+  "permission": "me",
+  "canvas_type": "Ingestion Pipeline",
+  "canvas_category": "dataflow_canvas",
+  "dsl": {
+    "components": {
+      "File": {
+        "downstream": [
+          "Parser:HipSignsRhyme"
+        ],
+        "obj": {
+          "component_name": "File",
+          "params": {}
+        },
+        "upstream": []
+      },
+      "Parser:HipSignsRhyme": {
+        "downstream": [
+          "GeneralChunker:SixApplesFall"
+        ],
+        "obj": {
+          "component_name": "Parser",
+          "params": {
+            "enable_vision_enhancement": false,
+            "vlm": {
+              "llm_id": ""
+            },
+            "doc": {
+              "output_format": "json",
+              "preprocess": [
+                "main_content"
+              ],
+              "suffix": [
+                "doc"
+              ]
+            },
+            "docx": {
+              "flatten_media_to_text": false,
+              "output_format": "json",
+              "preprocess": [
+                "main_content"
+              ],
+              "suffix": [
+                "docx"
+              ],
+              "vlm": {}
+            },
+            "html": {
+              "output_format": "json",
+              "preprocess": [
+                "main_content"
+              ],
+              "suffix": [
+                "htm",
+                "html"
+              ]
+            },
+            "markdown": {
+              "flatten_media_to_text": false,
+              "output_format": "json",
+              "preprocess": [
+                "main_content"
+              ],
+              "suffix": [
+                "md",
+                "markdown",
+                "mdx"
+              ],
+              "vlm": {}
+            },
+            "pdf": {
+              "flatten_media_to_text": false,
+              "output_format": "json",
+              "parse_method": "Plain Text",
+              "preprocess": [
+                "main_content"
+              ],
+              "suffix": [
+                "pdf"
+              ],
+              "vlm": {},
+              "pages": [
+                [
+                  1,
+                  100000
+                ]
+              ]
+            },
+            "spreadsheet": {
+              "flatten_media_to_text": false,
+              "output_format": "json",
+              "parse_method": "DeepDOC",
+              "preprocess": [
+                "main_content"
+              ],
+              "suffix": [
+                "xls",
+                "xlsx",
+                "csv"
+              ],
+              "vlm": {}
+            },
+            "text&code": {
+              "output_format": "json",
+              "preprocess": [
+                "main_content"
+              ],
+              "suffix": [
+                "txt",
+                "py",
+                "js",
+                "java",
+                "c",
+                "cpp",
+                "h",
+                "php",
+                "go",
+                "ts",
+                "sh",
+                "cs",
+                "kt",
+                "sql"
+              ]
+            }
+          }
+        },
+        "upstream": [
+          "File"
+        ]
+      },
+      "GeneralChunker:SixApplesFall": {
+        "downstream": [
+          "Compiler:HFCardioGraph"
+        ],
+        "obj": {
+          "component_name": "GeneralChunker",
+          "params": {
+            "children_delimiters": [],
+            "chunk_token_size": 512,
+            "delimiters": [
+              "\n",
+              "!",
+              "?",
+              ";",
+              "。",
+              "；",
+              "！",
+              "？"
+            ],
+            "image_context_size": 0,
+            "outputs": {
+              "chunks": {
+                "type": "Array<Object>",
+                "value": []
+              }
+            },
+            "overlapped_percent": 0,
+            "table_context_size": 0
+          }
+        },
+        "upstream": [
+          "Parser:HipSignsRhyme"
+        ]
+      },
+      "Tokenizer:LegalReadersDecide": {
+        "downstream": [],
+        "obj": {
+          "component_name": "Tokenizer",
+          "params": {
+            "fields": "text",
+            "filename_embd_weight": 0.1,
+            "outputs": {},
+            "search_method": [
+              "embedding",
+              "full_text"
+            ]
+          }
+        },
+        "upstream": [
+          "Compiler:HFCardioGraph"
+        ]
+      },
+      "Compiler:HFCardioGraph": {
+        "upstream": [
+          "GeneralChunker:SixApplesFall"
+        ],
+        "downstream": [
+          "Tokenizer:LegalReadersDecide"
+        ],
+        "obj": {
+          "component_name": "Compiler",
+          "params": {
+            "compilation_template_id": "SOURCE_VALIDATION_ONLY",
+            "llm_id": "UNCONFIGURED_CHAT",
+            "embedding_model": "UNCONFIGURED_EMBEDDING",
+            "language": "Chinese",
+            "max_workers": 1,
+            "enable_historical_dedup": false
+          }
+        }
+      }
+    },
+    "globals": {
+      "sys.history": []
+    },
+    "history": [],
+    "messages": [],
+    "retrieval": [],
+    "variables": []
+  }
+}

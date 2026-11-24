@@ -1,0 +1,9 @@
+{
+  "version": "2.0",
+  "actual_relation_count": 3,
+  "relations": [
+    {"internal": "increases_risk_of", "name": "增加风险", "directed": true, "meaning": "文献明确支持某因素增加某疾病的患病风险，不代表已证实因果"},
+    {"internal": "causes", "name": "导致", "directed": true, "meaning": "原文明确支持原因到结果的因果关系，相关与风险升高均不足以确认"},
+    {"internal": "associated_with", "name": "相关", "directed": false, "meaning": "文献支持相关性，默认不赋予方向，不推定因果"}
+  ]
+}

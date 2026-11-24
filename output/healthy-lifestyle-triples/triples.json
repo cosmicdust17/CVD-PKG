@@ -1,0 +1,1675 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-26T17:43:30.186001+08:00",
+    "document_id": "D3",
+    "model": "deepseek-v4-flash",
+    "mode": "RAGFlow chat API; local PDF text; no native Graph compiler, embeddings, indexes or G6",
+    "prompt_fingerprint": "3DD055EE4D88D0207479F4C9C11836E5048D8551EDB0393A2794A8D26F87CB94",
+    "total_pdf_pages": 22,
+    "processed_body_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "skipped_bibliography_pages": [
+      {
+        "page": 16,
+        "reason": "参考文献页或无实质正文（源文本保留在页码索引）"
+      },
+      {
+        "page": 17,
+        "reason": "参考文献页或无实质正文（源文本保留在页码索引）"
+      },
+      {
+        "page": 18,
+        "reason": "参考文献页或无实质正文（源文本保留在页码索引）"
+      },
+      {
+        "page": 19,
+        "reason": "参考文献页或无实质正文（源文本保留在页码索引）"
+      },
+      {
+        "page": 20,
+        "reason": "参考文献页或无实质正文（源文本保留在页码索引）"
+      },
+      {
+        "page": 21,
+        "reason": "参考文献页或无实质正文（源文本保留在页码索引）"
+      },
+      {
+        "page": 22,
+        "reason": "参考文献页或无实质正文（源文本保留在页码索引）"
+      }
+    ],
+    "raw_candidate_count": 60,
+    "accepted_candidates_before_dedup": 20,
+    "pending_candidates": 40,
+    "entity_count": 20,
+    "relation_count": 19,
+    "evidence_count": 15,
+    "entity_type_counts": {
+      "危险因素": 15,
+      "心血管疾病": 4,
+      "健康指标": 1
+    },
+    "relation_type_counts": {
+      "相关": 3,
+      "增加风险": 16
+    },
+    "review_method": "RAGFlow双阶段模型抽取与审核，程序核验引文；非临床专家人工审核",
+    "embedding_requests": 0,
+    "vector_index_created": false,
+    "g6_generated": false,
+    "schema_and_references": "passed",
+    "all_final_quotes_exactly_located_on_source_pdf_page": true,
+    "all_final_items_have_evidence": true,
+    "schema_version": "1.0",
+    "extractor": "RAGFlow",
+    "documents": [
+      {
+        "document_id": "D3",
+        "sha256": "93ffaa1dfb22f09406231ea71e8780f0bc93c1d16d164a5f3fc1f3f397f0d1d6",
+        "name": "中国健康生活方式预防心血管代谢疾病指南.pdf",
+        "page_count": 22,
+        "page_numbering": "physical_pdf_1_based",
+        "page_text_characters": [
+          2658,
+          2167,
+          2340,
+          2384,
+          2489,
+          2238,
+          961,
+          2220,
+          2042,
+          2276,
+          2132,
+          2304,
+          2205,
+          2188,
+          4064,
+          6523,
+          6622,
+          6701,
+          6535,
+          6953,
+          6634,
+          4965
+        ],
+        "status": "local_pdf_read_only; not RAGFlow parsing or knowledge extraction"
+      }
+    ],
+    "status": "evidence_checked",
+    "export_schema_version": "2.1",
+    "relation_language": "zh-CN",
+    "id_format": "D3_E001 / D3_R001 / D3_EV001",
+    "entity_language": "zh-CN"
+  },
+  "entities": [
+    {
+      "id": "D3_E001",
+      "name": "电子烟",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV008"
+      ]
+    },
+    {
+      "id": "D3_E002",
+      "name": "含糖饮料摄入过多",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV001"
+      ]
+    },
+    {
+      "id": "D3_E003",
+      "name": "睡眠时间少于6 h",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV007"
+      ]
+    },
+    {
+      "id": "D3_E004",
+      "name": "膳食胆固醇摄入增加",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV013"
+      ]
+    },
+    {
+      "id": "D3_E005",
+      "name": "高血压",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV009"
+      ]
+    },
+    {
+      "id": "D3_E006",
+      "name": "心血管病",
+      "type": "心血管疾病",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV001",
+        "D3_EV003",
+        "D3_EV004",
+        "D3_EV005",
+        "D3_EV006",
+        "D3_EV012",
+        "D3_EV014"
+      ]
+    },
+    {
+      "id": "D3_E007",
+      "name": "心肌梗死",
+      "type": "心血管疾病",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV001",
+        "D3_EV008"
+      ]
+    },
+    {
+      "id": "D3_E008",
+      "name": "饮用添加人工甜味剂饮料",
+      "type": "危险因素",
+      "aliases": [
+        "饮用 ASB"
+      ],
+      "evidence_ids": [
+        "D3_EV010"
+      ]
+    },
+    {
+      "id": "D3_E009",
+      "name": "血液总胆固醇水平",
+      "type": "健康指标",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV013"
+      ]
+    },
+    {
+      "id": "D3_E010",
+      "name": "久坐行为",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV004",
+        "D3_EV006",
+        "D3_EV012"
+      ]
+    },
+    {
+      "id": "D3_E011",
+      "name": "PM2.5高浓度环境",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV009"
+      ]
+    },
+    {
+      "id": "D3_E012",
+      "name": "鸡蛋摄入量增加",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV005"
+      ]
+    },
+    {
+      "id": "D3_E013",
+      "name": "脑卒中",
+      "type": "心血管疾病",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV001",
+        "D3_EV002",
+        "D3_EV007",
+        "D3_EV010",
+        "D3_EV011",
+        "D3_EV015"
+      ]
+    },
+    {
+      "id": "D3_E014",
+      "name": "高盐饮食",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV014"
+      ]
+    },
+    {
+      "id": "D3_E015",
+      "name": "睡眠时间多于8 h",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV015"
+      ]
+    },
+    {
+      "id": "D3_E016",
+      "name": "吸烟",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV003"
+      ]
+    },
+    {
+      "id": "D3_E017",
+      "name": "糖尿病",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV009"
+      ]
+    },
+    {
+      "id": "D3_E018",
+      "name": "饮酒",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV011"
+      ]
+    },
+    {
+      "id": "D3_E019",
+      "name": "冠心病",
+      "type": "心血管疾病",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV007",
+        "D3_EV010",
+        "D3_EV015"
+      ]
+    },
+    {
+      "id": "D3_E020",
+      "name": "饮酒过量",
+      "type": "危险因素",
+      "aliases": [],
+      "evidence_ids": [
+        "D3_EV002"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "D3_R001",
+      "source": "D3_E016",
+      "target": "D3_E006",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV003"
+      ],
+      "qualifiers": [
+        "吸烟量越大、年限越长、开始吸烟年龄越小，风险越大"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV003"
+          ],
+          "qualifiers": "吸烟量越大、年限越长、开始吸烟年龄越小，风险越大",
+          "review_reason": "原文第12页明确表述“吸烟量越大、年限越长、开始吸烟年龄越小，心血管病风险越大”，支持吸烟作为危险因素增加心血管病风险，且限定条件与候选qualifiers一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C044"
+      ]
+    },
+    {
+      "id": "D3_R002",
+      "source": "D3_E008",
+      "target": "D3_E013",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV010"
+      ],
+      "qualifiers": [],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV010"
+          ],
+          "qualifiers": "",
+          "review_reason": "原文明确写“饮用 ASB 增加脑卒中、冠心病及总死亡风险”，ASB有前文明确释义为人工甜味剂饮料，候选暴露“饮用ASB”与脑卒中风险增加方向一致；总死亡风险部分不影响脑卒中端点。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C017"
+      ]
+    },
+    {
+      "id": "D3_R003",
+      "source": "D3_E002",
+      "target": "D3_E013",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV001"
+      ],
+      "qualifiers": [
+        "摄入过多"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV001"
+          ],
+          "qualifiers": "摄入过多",
+          "review_reason": "原文同一句将脑卒中以“心血管病（脑卒中、心肌梗死）”形式明确列为SSB摄入过多增加风险的结局，支持含糖饮料摄入过多增加脑卒中风险。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C013"
+      ]
+    },
+    {
+      "id": "D3_R004",
+      "source": "D3_E011",
+      "target": "D3_E017",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV009"
+      ],
+      "qualifiers": [
+        "长期处于 PM2.5 高浓度环境下"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV009"
+          ],
+          "qualifiers": "长期处于 PM2.5 高浓度环境下",
+          "review_reason": "原文明确写出“长期处于 PM2.5 高浓度环境下，高血压、糖尿病的发病风险明显升高”，源暴露、靶“糖尿病”及限定条件“长期处于 PM2.5 高浓度环境下”均有原文支持。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C056"
+      ]
+    },
+    {
+      "id": "D3_R005",
+      "source": "D3_E020",
+      "target": "D3_E013",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV002"
+      ],
+      "qualifiers": [
+        "过量饮酒"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV002"
+          ],
+          "qualifiers": "过量饮酒",
+          "review_reason": "原文第12页明确表述“饮酒过量会增加脑卒中……发生风险”，支持过量饮酒增加脑卒中风险，方向与候选关系一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C046"
+      ]
+    },
+    {
+      "id": "D3_R006",
+      "source": "D3_E003",
+      "target": "D3_E019",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV007"
+      ],
+      "qualifiers": [
+        "睡眠时间少于6 h"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV007"
+          ],
+          "qualifiers": "睡眠时间少于6 h",
+          "review_reason": "原文明确报告荟萃分析结果：睡眠时间少于6 h，冠心病和脑卒中发病风险分别增加48%和15%。端点“睡眠时间少于6 h”与“冠心病”可辨认，方向为增加发病风险，限定条件与原文一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C027"
+      ]
+    },
+    {
+      "id": "D3_R007",
+      "source": "D3_E002",
+      "target": "D3_E007",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV001"
+      ],
+      "qualifiers": [
+        "摄入过多"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV001"
+          ],
+          "qualifiers": "摄入过多",
+          "review_reason": "原文同一句将心肌梗死以“心血管病（脑卒中、心肌梗死）”形式明确列为SSB摄入过多增加风险的结局，支持含糖饮料摄入过多增加心肌梗死风险。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C014"
+      ]
+    },
+    {
+      "id": "D3_R008",
+      "source": "D3_E002",
+      "target": "D3_E006",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV001"
+      ],
+      "qualifiers": [
+        "摄入过多"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV001"
+          ],
+          "qualifiers": "摄入过多",
+          "review_reason": "原文明确写“SSB 摄入过多增加肥胖、糖尿病与心血管病（脑卒中、心肌梗死）风险”，暴露为含糖饮料摄入过多，结局为心血管病，方向为增加风险，与候选一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C012"
+      ]
+    },
+    {
+      "id": "D3_R009",
+      "source": "D3_E004",
+      "target": "D3_E009",
+      "type": "相关",
+      "directed": false,
+      "evidence_ids": [
+        "D3_EV013"
+      ],
+      "qualifiers": [],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV013"
+          ],
+          "qualifiers": "",
+          "review_reason": "原文明确：“既往美国Keys等团队的代谢病房干预研究、中美心血管病及心肺疾病流行病学合作研究等，也发现膳食胆固醇摄入的增加与血液总胆固醇（TC）水平的升高相关。”暴露为膳食胆固醇摄入增加，结局为血液总胆固醇水平升高，关系为“相关”（无向），端点类型分别为risk_factor与health_indicator，符合候选。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C011"
+      ]
+    },
+    {
+      "id": "D3_R010",
+      "source": "D3_E015",
+      "target": "D3_E013",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV015"
+      ],
+      "qualifiers": [
+        "睡眠时间多于8 h"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV015"
+          ],
+          "qualifiers": "睡眠时间多于8 h",
+          "review_reason": "原文明确报告睡眠时间多于8 h时脑卒中发病风险增加65%，与候选方向、对象及限定条件一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C030"
+      ]
+    },
+    {
+      "id": "D3_R011",
+      "source": "D3_E001",
+      "target": "D3_E007",
+      "type": "相关",
+      "directed": false,
+      "evidence_ids": [
+        "D3_EV008"
+      ],
+      "qualifiers": [
+        "横断面研究荟萃分析"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV008"
+          ],
+          "qualifiers": "横断面研究荟萃分析",
+          "review_reason": "原文第12页明确表述“针对2项横断面研究的荟萃分析提示吸入电子烟与心肌梗死患病风险增加有关”，支持电子烟增加心肌梗死患病风险，qualifiers保留研究设计限定。 原文为相关/关联表述，最终统一保守降为无向“相关”。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C045"
+      ]
+    },
+    {
+      "id": "D3_R012",
+      "source": "D3_E015",
+      "target": "D3_E019",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV015"
+      ],
+      "qualifiers": [
+        "睡眠时间多于8 h"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV015"
+          ],
+          "qualifiers": "睡眠时间多于8 h",
+          "review_reason": "原文明确报告当睡眠时间多于8 h，冠心病和脑卒中发病风险增加38%和65%。候选“睡眠时间多于8 h→冠心病”方向、对象及限定条件均与原文一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C029"
+      ]
+    },
+    {
+      "id": "D3_R013",
+      "source": "D3_E018",
+      "target": "D3_E013",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV011"
+      ],
+      "qualifiers": [
+        "剂量反应关系"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV011"
+          ],
+          "qualifiers": "剂量反应关系",
+          "review_reason": "原文第12页明确表述“饮酒显著增加血压水平、脑卒中发生风险，且呈剂量反应关系”，支持饮酒增加脑卒中发生风险并有剂量反应关系。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C048"
+      ]
+    },
+    {
+      "id": "D3_R014",
+      "source": "D3_E010",
+      "target": "D3_E006",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV004",
+        "D3_EV006",
+        "D3_EV012"
+      ],
+      "qualifiers": [
+        "与久坐时间较少组（<5 h/d）相比；久坐时间为5~<8、8~<10和≥10 h/d",
+        "每天静坐时间超过10 h后，每增加1 h"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV006",
+            "D3_EV004"
+          ],
+          "qualifiers": "每天静坐时间超过10 h后，每增加1 h",
+          "review_reason": "原文明确给出条件与方向：每天静坐时间超过10 h后，每增加1 h静坐行为，心血管病发病风险增加8%；该证据直接支持久坐行为在限定条件下增加心血管病发病风险，端点与限定条件一致。"
+        },
+        {
+          "evidence_ids": [
+            "D3_EV012"
+          ],
+          "qualifiers": "与久坐时间较少组（<5 h/d）相比；久坐时间为5~<8、8~<10和≥10 h/d",
+          "review_reason": "原文明确报告我国前瞻性队列研究：与久坐时间较少组（<5 h/d）相比，久坐时间为5~<8、8~<10和≥10 h/d者心血管病发病风险分别增加7%、27%和51%。端点“久坐行为”“心血管病”与原文可辨认，方向为增加发病风险，限定条件与原文剂量分组一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C024",
+        "D3_C026"
+      ]
+    },
+    {
+      "id": "D3_R015",
+      "source": "D3_E006",
+      "target": "D3_E012",
+      "type": "相关",
+      "directed": false,
+      "evidence_ids": [
+        "D3_EV005"
+      ],
+      "qualifiers": [
+        "仅限2型糖尿病患者"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV005"
+          ],
+          "qualifiers": "仅限2型糖尿病患者",
+          "review_reason": "原文明确：“韩国一项平均随访7.9年的队列研究，发现2型糖尿病患者增加鸡蛋摄入量会升高心血管病风险，而在无糖尿病的人群中未发现鸡蛋摄入与心血管病风险的关联。”暴露（鸡蛋摄入量增加）、结局（心血管病风险升高）、方向（升高）及人群条件（仅限2型糖尿病患者）均与候选一致，限定词保留正确。 原文为相关/关联表述，最终统一保守降为无向“相关”。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C010"
+      ]
+    },
+    {
+      "id": "D3_R016",
+      "source": "D3_E014",
+      "target": "D3_E006",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV014"
+      ],
+      "qualifiers": [
+        "长期口味偏重"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV014"
+          ],
+          "qualifiers": "长期口味偏重",
+          "review_reason": "原文第7页明确表述“长期口味偏重、高盐饮食容易诱发心血管病”，端点“高盐饮食”（risk_factor）与“心血管病”（cardiovascular_disease）均可由原文辨认，方向为高盐饮食增加心血管病风险；限定条件“长期口味偏重”已作为qualifiers保留。原文用“容易诱发”表述风险倾向而非严格因果，故不确认显式因果。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C022"
+      ]
+    },
+    {
+      "id": "D3_R017",
+      "source": "D3_E003",
+      "target": "D3_E013",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV007"
+      ],
+      "qualifiers": [
+        "睡眠时间少于6 h"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV007"
+          ],
+          "qualifiers": "睡眠时间少于6 h",
+          "review_reason": "同一句原文明确报告睡眠时间少于6 h时脑卒中发病风险增加15%，与候选方向、对象和限定条件一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C028"
+      ]
+    },
+    {
+      "id": "D3_R018",
+      "source": "D3_E008",
+      "target": "D3_E019",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV010"
+      ],
+      "qualifiers": [],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV010"
+          ],
+          "qualifiers": "",
+          "review_reason": "原文明确写“饮用 ASB 增加脑卒中、冠心病及总死亡风险”，ASB有明确释义，候选暴露“饮用ASB”与冠心病风险增加方向一致；总死亡风险部分不影响冠心病端点。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C018"
+      ]
+    },
+    {
+      "id": "D3_R019",
+      "source": "D3_E011",
+      "target": "D3_E005",
+      "type": "增加风险",
+      "directed": true,
+      "evidence_ids": [
+        "D3_EV009"
+      ],
+      "qualifiers": [
+        "长期处于 PM2.5 高浓度环境下"
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV009"
+          ],
+          "qualifiers": "长期处于 PM2.5 高浓度环境下",
+          "review_reason": "原文明确写出“长期处于 PM2.5 高浓度环境下，高血压、糖尿病的发病风险明显升高”，源暴露、靶“高血压”及限定条件“长期处于 PM2.5 高浓度环境下”均有原文支持；高血压按危险因素角色归risk_factor可接受。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C055"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "D3_EV001",
+      "document_id": "D3",
+      "page": 5,
+      "quote": "SSB 摄入过多增加肥胖、糖尿病\n与心血管病（脑卒中、心肌梗死 ）风险"
+    },
+    {
+      "id": "D3_EV002",
+      "document_id": "D3",
+      "page": 12,
+      "quote": "但是，饮\n酒过量会增加脑卒中"
+    },
+    {
+      "id": "D3_EV003",
+      "document_id": "D3",
+      "page": 12,
+      "quote": "烟剂量， 吸烟量越大、 年限越长、 开始吸烟年龄越小，\n心血管病风险越大"
+    },
+    {
+      "id": "D3_EV004",
+      "document_id": "D3",
+      "page": 9,
+      "quote": "它能够增加全因死\n亡、 心血管病死亡风险和 2 型糖尿病发病风险"
+    },
+    {
+      "id": "D3_EV005",
+      "document_id": "D3",
+      "page": 4,
+      "quote": "发现 2 型糖尿病患者增加鸡蛋摄入量会升\n高心血管病风险，而在无糖尿病的人群中未发现鸡\n蛋摄入与心血管病风险的关联"
+    },
+    {
+      "id": "D3_EV006",
+      "document_id": "D3",
+      "page": 9,
+      "quote": "当每天静坐时间超过 10 h 后，每增加\n1 h 的静坐行为，心血管病发病风险增加 8%"
+    },
+    {
+      "id": "D3_EV007",
+      "document_id": "D3",
+      "page": 10,
+      "quote": "睡眠时间少\n于 6 h，冠心病和脑卒中发病风险分别增加 48% 和\n15%"
+    },
+    {
+      "id": "D3_EV008",
+      "document_id": "D3",
+      "page": 12,
+      "quote": "针对 2 项横断面研究的荟萃分析提示吸入电\n子烟与心肌梗死患病风险增加有关"
+    },
+    {
+      "id": "D3_EV009",
+      "document_id": "D3",
+      "page": 14,
+      "quote": "长期处于 PM2.5 高浓度环境下，高血压、\n糖尿病的发病风险明显升高，脑卒中、冠心病等心\n血管病的发病和死亡风险也相应增加"
+    },
+    {
+      "id": "D3_EV010",
+      "document_id": "D3",
+      "page": 5,
+      "quote": "饮用 ASB 增加脑卒中、冠心病及\n总死亡风险"
+    },
+    {
+      "id": "D3_EV011",
+      "document_id": "D3",
+      "page": 12,
+      "quote": "饮酒显著增加血压水平、脑卒中发生风险，\n且呈剂量反应关系"
+    },
+    {
+      "id": "D3_EV012",
+      "document_id": "D3",
+      "page": 10,
+      "quote": "与久坐时间较少组（<5 h/d）相比，久坐时间\n为 5~<8、8~<10 和≥ 10 h/d 者心血管病发病风险分\n别增加 7%、27% 和 51%"
+    },
+    {
+      "id": "D3_EV013",
+      "document_id": "D3",
+      "page": 4,
+      "quote": "也发现膳食胆固醇摄入的增加与\n血液总胆固醇 （total cholesterol， TC） 水平的升高相关"
+    },
+    {
+      "id": "D3_EV014",
+      "document_id": "D3",
+      "page": 7,
+      "quote": "长期口味偏重、高盐饮食容易诱发心血管病"
+    },
+    {
+      "id": "D3_EV015",
+      "document_id": "D3",
+      "page": 10,
+      "quote": "当睡眠时间多于 8 h，冠心病和脑卒中发病风\n险增加 38% 和 65%"
+    }
+  ],
+  "triples": [
+    {
+      "id": "D3_R001",
+      "source": "D3_E016",
+      "source_id": "D3_E016",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E006",
+      "target_id": "D3_E006",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [
+        "吸烟量越大、年限越长、开始吸烟年龄越小，风险越大"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV003",
+          "document_id": "D3",
+          "page": 12,
+          "quote": "烟剂量， 吸烟量越大、 年限越长、 开始吸烟年龄越小，\n心血管病风险越大"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV003"
+          ],
+          "qualifiers": "吸烟量越大、年限越长、开始吸烟年龄越小，风险越大",
+          "review_reason": "原文第12页明确表述“吸烟量越大、年限越长、开始吸烟年龄越小，心血管病风险越大”，支持吸烟作为危险因素增加心血管病风险，且限定条件与候选qualifiers一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C044"
+      ],
+      "source_name": "吸烟",
+      "target_name": "心血管病",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV003"
+      ]
+    },
+    {
+      "id": "D3_R002",
+      "source": "D3_E008",
+      "source_id": "D3_E008",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E013",
+      "target_id": "D3_E013",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [],
+      "evidence": [
+        {
+          "id": "D3_EV010",
+          "document_id": "D3",
+          "page": 5,
+          "quote": "饮用 ASB 增加脑卒中、冠心病及\n总死亡风险"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV010"
+          ],
+          "qualifiers": "",
+          "review_reason": "原文明确写“饮用 ASB 增加脑卒中、冠心病及总死亡风险”，ASB有前文明确释义为人工甜味剂饮料，候选暴露“饮用ASB”与脑卒中风险增加方向一致；总死亡风险部分不影响脑卒中端点。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C017"
+      ],
+      "source_name": "饮用添加人工甜味剂饮料",
+      "target_name": "脑卒中",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV010"
+      ]
+    },
+    {
+      "id": "D3_R003",
+      "source": "D3_E002",
+      "source_id": "D3_E002",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E013",
+      "target_id": "D3_E013",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [
+        "摄入过多"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV001",
+          "document_id": "D3",
+          "page": 5,
+          "quote": "SSB 摄入过多增加肥胖、糖尿病\n与心血管病（脑卒中、心肌梗死 ）风险"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV001"
+          ],
+          "qualifiers": "摄入过多",
+          "review_reason": "原文同一句将脑卒中以“心血管病（脑卒中、心肌梗死）”形式明确列为SSB摄入过多增加风险的结局，支持含糖饮料摄入过多增加脑卒中风险。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C013"
+      ],
+      "source_name": "含糖饮料摄入过多",
+      "target_name": "脑卒中",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV001"
+      ]
+    },
+    {
+      "id": "D3_R004",
+      "source": "D3_E011",
+      "source_id": "D3_E011",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E017",
+      "target_id": "D3_E017",
+      "target_type": "危险因素",
+      "directed": true,
+      "qualifiers": [
+        "长期处于 PM2.5 高浓度环境下"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV009",
+          "document_id": "D3",
+          "page": 14,
+          "quote": "长期处于 PM2.5 高浓度环境下，高血压、\n糖尿病的发病风险明显升高，脑卒中、冠心病等心\n血管病的发病和死亡风险也相应增加"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV009"
+          ],
+          "qualifiers": "长期处于 PM2.5 高浓度环境下",
+          "review_reason": "原文明确写出“长期处于 PM2.5 高浓度环境下，高血压、糖尿病的发病风险明显升高”，源暴露、靶“糖尿病”及限定条件“长期处于 PM2.5 高浓度环境下”均有原文支持。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C056"
+      ],
+      "source_name": "PM2.5高浓度环境",
+      "target_name": "糖尿病",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV009"
+      ]
+    },
+    {
+      "id": "D3_R005",
+      "source": "D3_E020",
+      "source_id": "D3_E020",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E013",
+      "target_id": "D3_E013",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [
+        "过量饮酒"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV002",
+          "document_id": "D3",
+          "page": 12,
+          "quote": "但是，饮\n酒过量会增加脑卒中"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV002"
+          ],
+          "qualifiers": "过量饮酒",
+          "review_reason": "原文第12页明确表述“饮酒过量会增加脑卒中……发生风险”，支持过量饮酒增加脑卒中风险，方向与候选关系一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C046"
+      ],
+      "source_name": "饮酒过量",
+      "target_name": "脑卒中",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV002"
+      ]
+    },
+    {
+      "id": "D3_R006",
+      "source": "D3_E003",
+      "source_id": "D3_E003",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E019",
+      "target_id": "D3_E019",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [
+        "睡眠时间少于6 h"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV007",
+          "document_id": "D3",
+          "page": 10,
+          "quote": "睡眠时间少\n于 6 h，冠心病和脑卒中发病风险分别增加 48% 和\n15%"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV007"
+          ],
+          "qualifiers": "睡眠时间少于6 h",
+          "review_reason": "原文明确报告荟萃分析结果：睡眠时间少于6 h，冠心病和脑卒中发病风险分别增加48%和15%。端点“睡眠时间少于6 h”与“冠心病”可辨认，方向为增加发病风险，限定条件与原文一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C027"
+      ],
+      "source_name": "睡眠时间少于6 h",
+      "target_name": "冠心病",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV007"
+      ]
+    },
+    {
+      "id": "D3_R007",
+      "source": "D3_E002",
+      "source_id": "D3_E002",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E007",
+      "target_id": "D3_E007",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [
+        "摄入过多"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV001",
+          "document_id": "D3",
+          "page": 5,
+          "quote": "SSB 摄入过多增加肥胖、糖尿病\n与心血管病（脑卒中、心肌梗死 ）风险"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV001"
+          ],
+          "qualifiers": "摄入过多",
+          "review_reason": "原文同一句将心肌梗死以“心血管病（脑卒中、心肌梗死）”形式明确列为SSB摄入过多增加风险的结局，支持含糖饮料摄入过多增加心肌梗死风险。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C014"
+      ],
+      "source_name": "含糖饮料摄入过多",
+      "target_name": "心肌梗死",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV001"
+      ]
+    },
+    {
+      "id": "D3_R008",
+      "source": "D3_E002",
+      "source_id": "D3_E002",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E006",
+      "target_id": "D3_E006",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [
+        "摄入过多"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV001",
+          "document_id": "D3",
+          "page": 5,
+          "quote": "SSB 摄入过多增加肥胖、糖尿病\n与心血管病（脑卒中、心肌梗死 ）风险"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV001"
+          ],
+          "qualifiers": "摄入过多",
+          "review_reason": "原文明确写“SSB 摄入过多增加肥胖、糖尿病与心血管病（脑卒中、心肌梗死）风险”，暴露为含糖饮料摄入过多，结局为心血管病，方向为增加风险，与候选一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C012"
+      ],
+      "source_name": "含糖饮料摄入过多",
+      "target_name": "心血管病",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV001"
+      ]
+    },
+    {
+      "id": "D3_R009",
+      "source": "D3_E004",
+      "source_id": "D3_E004",
+      "source_type": "危险因素",
+      "relation": "相关",
+      "target": "D3_E009",
+      "target_id": "D3_E009",
+      "target_type": "健康指标",
+      "directed": false,
+      "qualifiers": [],
+      "evidence": [
+        {
+          "id": "D3_EV013",
+          "document_id": "D3",
+          "page": 4,
+          "quote": "也发现膳食胆固醇摄入的增加与\n血液总胆固醇 （total cholesterol， TC） 水平的升高相关"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV013"
+          ],
+          "qualifiers": "",
+          "review_reason": "原文明确：“既往美国Keys等团队的代谢病房干预研究、中美心血管病及心肺疾病流行病学合作研究等，也发现膳食胆固醇摄入的增加与血液总胆固醇（TC）水平的升高相关。”暴露为膳食胆固醇摄入增加，结局为血液总胆固醇水平升高，关系为“相关”（无向），端点类型分别为risk_factor与health_indicator，符合候选。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C011"
+      ],
+      "source_name": "膳食胆固醇摄入增加",
+      "target_name": "血液总胆固醇水平",
+      "type": "相关",
+      "evidence_ids": [
+        "D3_EV013"
+      ]
+    },
+    {
+      "id": "D3_R010",
+      "source": "D3_E015",
+      "source_id": "D3_E015",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E013",
+      "target_id": "D3_E013",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [
+        "睡眠时间多于8 h"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV015",
+          "document_id": "D3",
+          "page": 10,
+          "quote": "当睡眠时间多于 8 h，冠心病和脑卒中发病风\n险增加 38% 和 65%"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV015"
+          ],
+          "qualifiers": "睡眠时间多于8 h",
+          "review_reason": "原文明确报告睡眠时间多于8 h时脑卒中发病风险增加65%，与候选方向、对象及限定条件一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C030"
+      ],
+      "source_name": "睡眠时间多于8 h",
+      "target_name": "脑卒中",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV015"
+      ]
+    },
+    {
+      "id": "D3_R011",
+      "source": "D3_E001",
+      "source_id": "D3_E001",
+      "source_type": "危险因素",
+      "relation": "相关",
+      "target": "D3_E007",
+      "target_id": "D3_E007",
+      "target_type": "心血管疾病",
+      "directed": false,
+      "qualifiers": [
+        "横断面研究荟萃分析"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV008",
+          "document_id": "D3",
+          "page": 12,
+          "quote": "针对 2 项横断面研究的荟萃分析提示吸入电\n子烟与心肌梗死患病风险增加有关"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV008"
+          ],
+          "qualifiers": "横断面研究荟萃分析",
+          "review_reason": "原文第12页明确表述“针对2项横断面研究的荟萃分析提示吸入电子烟与心肌梗死患病风险增加有关”，支持电子烟增加心肌梗死患病风险，qualifiers保留研究设计限定。 原文为相关/关联表述，最终统一保守降为无向“相关”。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C045"
+      ],
+      "source_name": "电子烟",
+      "target_name": "心肌梗死",
+      "type": "相关",
+      "evidence_ids": [
+        "D3_EV008"
+      ]
+    },
+    {
+      "id": "D3_R012",
+      "source": "D3_E015",
+      "source_id": "D3_E015",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E019",
+      "target_id": "D3_E019",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [
+        "睡眠时间多于8 h"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV015",
+          "document_id": "D3",
+          "page": 10,
+          "quote": "当睡眠时间多于 8 h，冠心病和脑卒中发病风\n险增加 38% 和 65%"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV015"
+          ],
+          "qualifiers": "睡眠时间多于8 h",
+          "review_reason": "原文明确报告当睡眠时间多于8 h，冠心病和脑卒中发病风险增加38%和65%。候选“睡眠时间多于8 h→冠心病”方向、对象及限定条件均与原文一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C029"
+      ],
+      "source_name": "睡眠时间多于8 h",
+      "target_name": "冠心病",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV015"
+      ]
+    },
+    {
+      "id": "D3_R013",
+      "source": "D3_E018",
+      "source_id": "D3_E018",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E013",
+      "target_id": "D3_E013",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [
+        "剂量反应关系"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV011",
+          "document_id": "D3",
+          "page": 12,
+          "quote": "饮酒显著增加血压水平、脑卒中发生风险，\n且呈剂量反应关系"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV011"
+          ],
+          "qualifiers": "剂量反应关系",
+          "review_reason": "原文第12页明确表述“饮酒显著增加血压水平、脑卒中发生风险，且呈剂量反应关系”，支持饮酒增加脑卒中发生风险并有剂量反应关系。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C048"
+      ],
+      "source_name": "饮酒",
+      "target_name": "脑卒中",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV011"
+      ]
+    },
+    {
+      "id": "D3_R014",
+      "source": "D3_E010",
+      "source_id": "D3_E010",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E006",
+      "target_id": "D3_E006",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [
+        "与久坐时间较少组（<5 h/d）相比；久坐时间为5~<8、8~<10和≥10 h/d",
+        "每天静坐时间超过10 h后，每增加1 h"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV004",
+          "document_id": "D3",
+          "page": 9,
+          "quote": "它能够增加全因死\n亡、 心血管病死亡风险和 2 型糖尿病发病风险"
+        },
+        {
+          "id": "D3_EV006",
+          "document_id": "D3",
+          "page": 9,
+          "quote": "当每天静坐时间超过 10 h 后，每增加\n1 h 的静坐行为，心血管病发病风险增加 8%"
+        },
+        {
+          "id": "D3_EV012",
+          "document_id": "D3",
+          "page": 10,
+          "quote": "与久坐时间较少组（<5 h/d）相比，久坐时间\n为 5~<8、8~<10 和≥ 10 h/d 者心血管病发病风险分\n别增加 7%、27% 和 51%"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV006",
+            "D3_EV004"
+          ],
+          "qualifiers": "每天静坐时间超过10 h后，每增加1 h",
+          "review_reason": "原文明确给出条件与方向：每天静坐时间超过10 h后，每增加1 h静坐行为，心血管病发病风险增加8%；该证据直接支持久坐行为在限定条件下增加心血管病发病风险，端点与限定条件一致。"
+        },
+        {
+          "evidence_ids": [
+            "D3_EV012"
+          ],
+          "qualifiers": "与久坐时间较少组（<5 h/d）相比；久坐时间为5~<8、8~<10和≥10 h/d",
+          "review_reason": "原文明确报告我国前瞻性队列研究：与久坐时间较少组（<5 h/d）相比，久坐时间为5~<8、8~<10和≥10 h/d者心血管病发病风险分别增加7%、27%和51%。端点“久坐行为”“心血管病”与原文可辨认，方向为增加发病风险，限定条件与原文剂量分组一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C024",
+        "D3_C026"
+      ],
+      "source_name": "久坐行为",
+      "target_name": "心血管病",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV004",
+        "D3_EV006",
+        "D3_EV012"
+      ]
+    },
+    {
+      "id": "D3_R015",
+      "source": "D3_E006",
+      "source_id": "D3_E006",
+      "source_type": "心血管疾病",
+      "relation": "相关",
+      "target": "D3_E012",
+      "target_id": "D3_E012",
+      "target_type": "危险因素",
+      "directed": false,
+      "qualifiers": [
+        "仅限2型糖尿病患者"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV005",
+          "document_id": "D3",
+          "page": 4,
+          "quote": "发现 2 型糖尿病患者增加鸡蛋摄入量会升\n高心血管病风险，而在无糖尿病的人群中未发现鸡\n蛋摄入与心血管病风险的关联"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV005"
+          ],
+          "qualifiers": "仅限2型糖尿病患者",
+          "review_reason": "原文明确：“韩国一项平均随访7.9年的队列研究，发现2型糖尿病患者增加鸡蛋摄入量会升高心血管病风险，而在无糖尿病的人群中未发现鸡蛋摄入与心血管病风险的关联。”暴露（鸡蛋摄入量增加）、结局（心血管病风险升高）、方向（升高）及人群条件（仅限2型糖尿病患者）均与候选一致，限定词保留正确。 原文为相关/关联表述，最终统一保守降为无向“相关”。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C010"
+      ],
+      "source_name": "心血管病",
+      "target_name": "鸡蛋摄入量增加",
+      "type": "相关",
+      "evidence_ids": [
+        "D3_EV005"
+      ]
+    },
+    {
+      "id": "D3_R016",
+      "source": "D3_E014",
+      "source_id": "D3_E014",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E006",
+      "target_id": "D3_E006",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [
+        "长期口味偏重"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV014",
+          "document_id": "D3",
+          "page": 7,
+          "quote": "长期口味偏重、高盐饮食容易诱发心血管病"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV014"
+          ],
+          "qualifiers": "长期口味偏重",
+          "review_reason": "原文第7页明确表述“长期口味偏重、高盐饮食容易诱发心血管病”，端点“高盐饮食”（risk_factor）与“心血管病”（cardiovascular_disease）均可由原文辨认，方向为高盐饮食增加心血管病风险；限定条件“长期口味偏重”已作为qualifiers保留。原文用“容易诱发”表述风险倾向而非严格因果，故不确认显式因果。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C022"
+      ],
+      "source_name": "高盐饮食",
+      "target_name": "心血管病",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV014"
+      ]
+    },
+    {
+      "id": "D3_R017",
+      "source": "D3_E003",
+      "source_id": "D3_E003",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E013",
+      "target_id": "D3_E013",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [
+        "睡眠时间少于6 h"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV007",
+          "document_id": "D3",
+          "page": 10,
+          "quote": "睡眠时间少\n于 6 h，冠心病和脑卒中发病风险分别增加 48% 和\n15%"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV007"
+          ],
+          "qualifiers": "睡眠时间少于6 h",
+          "review_reason": "同一句原文明确报告睡眠时间少于6 h时脑卒中发病风险增加15%，与候选方向、对象和限定条件一致。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C028"
+      ],
+      "source_name": "睡眠时间少于6 h",
+      "target_name": "脑卒中",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV007"
+      ]
+    },
+    {
+      "id": "D3_R018",
+      "source": "D3_E008",
+      "source_id": "D3_E008",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E019",
+      "target_id": "D3_E019",
+      "target_type": "心血管疾病",
+      "directed": true,
+      "qualifiers": [],
+      "evidence": [
+        {
+          "id": "D3_EV010",
+          "document_id": "D3",
+          "page": 5,
+          "quote": "饮用 ASB 增加脑卒中、冠心病及\n总死亡风险"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV010"
+          ],
+          "qualifiers": "",
+          "review_reason": "原文明确写“饮用 ASB 增加脑卒中、冠心病及总死亡风险”，ASB有明确释义，候选暴露“饮用ASB”与冠心病风险增加方向一致；总死亡风险部分不影响冠心病端点。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C018"
+      ],
+      "source_name": "饮用添加人工甜味剂饮料",
+      "target_name": "冠心病",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV010"
+      ]
+    },
+    {
+      "id": "D3_R019",
+      "source": "D3_E011",
+      "source_id": "D3_E011",
+      "source_type": "危险因素",
+      "relation": "增加风险",
+      "target": "D3_E005",
+      "target_id": "D3_E005",
+      "target_type": "危险因素",
+      "directed": true,
+      "qualifiers": [
+        "长期处于 PM2.5 高浓度环境下"
+      ],
+      "evidence": [
+        {
+          "id": "D3_EV009",
+          "document_id": "D3",
+          "page": 14,
+          "quote": "长期处于 PM2.5 高浓度环境下，高血压、\n糖尿病的发病风险明显升高，脑卒中、冠心病等心\n血管病的发病和死亡风险也相应增加"
+        }
+      ],
+      "evidence_contexts": [
+        {
+          "evidence_ids": [
+            "D3_EV009"
+          ],
+          "qualifiers": "长期处于 PM2.5 高浓度环境下",
+          "review_reason": "原文明确写出“长期处于 PM2.5 高浓度环境下，高血压、糖尿病的发病风险明显升高”，源暴露、靶“高血压”及限定条件“长期处于 PM2.5 高浓度环境下”均有原文支持；高血压按危险因素角色归risk_factor可接受。"
+        }
+      ],
+      "source_candidate_ids": [
+        "D3_C055"
+      ],
+      "source_name": "PM2.5高浓度环境",
+      "target_name": "高血压",
+      "type": "增加风险",
+      "evidence_ids": [
+        "D3_EV009"
+      ]
+    }
+  ]
+}

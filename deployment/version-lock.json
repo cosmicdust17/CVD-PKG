@@ -1,0 +1,14 @@
+{
+  "tag": "v1.0.0-rc2",
+  "commit": "ac29b4b29928ca65d3efca19b6cfae3f86069b81",
+  "image": "infiniflow/ragflow:v1.0.0-rc2",
+  "origin": "https://github.com/infiniflow/ragflow",
+  "strategy": "copy official docker directory; loopback ports and resource limits only",
+  "observed_container_version": "v1.0.0-rc2",
+  "observed_image_digest": [
+    "infiniflow/ragflow@sha256:2fc19b4c8bbb589e6ea2debd641e1e83a92ad5f9b398c121d46c9f56f296ba6e"
+  ],
+  "official_mirror_amd64_rootfs_equal": true,
+  "elasticsearch_image_source": "docker.elastic.co/elasticsearch/elasticsearch:8.11.3",
+  "elasticsearch_digest": "sha256:2892d2363c3c12c5ed54c64faf89e3a19d633d8dd0d190d0bffe03035ff099b3"
+}

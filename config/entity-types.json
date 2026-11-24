@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "output_language": "zh-CN",
+  "types": [
+    {"internal": "risk_factor", "name": "危险因素"},
+    {"internal": "cardiovascular_disease", "name": "心血管疾病"},
+    {"internal": "health_indicator", "name": "健康指标"},
+    {"internal": "population_group", "name": "人群"}
+  ]
+}

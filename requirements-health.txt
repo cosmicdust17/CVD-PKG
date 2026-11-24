@@ -1,0 +1,5 @@
+-r requirements.txt
+fastapi==0.165.0
+uvicorn==0.54.0
+langgraph==1.2.24
+cvd-risk==2.0.0

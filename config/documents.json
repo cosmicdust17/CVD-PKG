@@ -1,0 +1,35 @@
+{
+  "D1": {
+    "name": "中国心血管病一级预防指南.pdf",
+    "sha256": "c54946e703b41716214fe8893277d1448e22011f9c9c550812608ea5bd285688",
+    "path": "documents/D1.pdf",
+    "output": "primary-prevention-triples",
+    "reference_mode": "tail"
+  },
+  "D2": {
+    "name": "中国心血管健康与疾病报告2024.pdf",
+    "sha256": "06487d31a42c6108509cd4537f97226720d210d25a00be39091e40a6cb0e7191",
+    "path": "documents/D2.pdf",
+    "output": "cardiovascular-report-2024-triples",
+    "reference_mode": "chapters",
+    "exclude_ranges": [
+      [
+        1,
+        12,
+        "封面、版权、编委、序言及目录"
+      ],
+      [
+        296,
+        299,
+        "缩略语附录及封底"
+      ]
+    ]
+  },
+  "D3": {
+    "name": "中国健康生活方式预防心血管代谢疾病指南.pdf",
+    "sha256": "93ffaa1dfb22f09406231ea71e8780f0bc93c1d16d164a5f3fc1f3f397f0d1d6",
+    "path": "documents/D3.pdf",
+    "output": "healthy-lifestyle-triples",
+    "reference_mode": "tail"
+  }
+}

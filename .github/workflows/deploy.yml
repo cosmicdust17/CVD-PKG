@@ -1,0 +1,57 @@
+name: Deploy CVD-PKG to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: kg-visualization/package.json
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: pnpm
+          cache-dependency-path: kg-visualization/pnpm-lock.yaml
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Rebuild knowledge graph from its three sources
+        run: python kg-visualization/scripts/build_graph_data.py
+      - name: Install locked dependencies
+        working-directory: kg-visualization
+        run: pnpm install --frozen-lockfile
+      - name: Test and build the Pages site
+        working-directory: kg-visualization
+        run: |
+          pnpm test
+          pnpm build --mode pages
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: kg-visualization/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
